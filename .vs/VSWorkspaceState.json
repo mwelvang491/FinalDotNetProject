@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NorthwindClass",
+    "\\NorthwindClass\\Views",
+    "\\NorthwindClass\\Views\\Shared"
   ],
-  "SelectedNode": "\\NorthwindHome.sln",
+  "SelectedNode": "\\NorthwindClass\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

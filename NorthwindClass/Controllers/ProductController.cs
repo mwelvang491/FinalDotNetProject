@@ -45,5 +45,9 @@ namespace NorthwindClass.Controllers
 
             return View();
         }
+        public ActionResult Category()
+        {
+            return View();
+        }
 	}
 }

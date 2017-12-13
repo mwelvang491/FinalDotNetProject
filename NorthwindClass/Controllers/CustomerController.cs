@@ -14,7 +14,7 @@ namespace NorthwindClass.Controllers
         {
             return View();
         }
-
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Register()
@@ -24,7 +24,7 @@ namespace NorthwindClass.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register([Bind include ="CompanyName, Password"])
+        public ActionResult Register(String name ="")
         {
             return View();
         }

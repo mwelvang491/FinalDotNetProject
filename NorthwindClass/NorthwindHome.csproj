@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -160,8 +161,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
-    <Compile Include="Controllers\FooController.cs" />
-    <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
@@ -198,7 +197,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -223,24 +224,14 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Hello\Index.cshtml" />
     <Content Include="Views\Customer\Register.cshtml" />
-    <Content Include="Views\Hello\stuff.cshtml" />
-    <Content Include="Views\Hello\addnumbers.cshtml" />
-    <Content Include="Views\Hello\DisplayList.cshtml" />
-    <Content Include="Views\Foo\Lesson7.cshtml" />
     <Content Include="Views\Customer\Account.cshtml" />
     <Content Include="Views\Customer\Login.cshtml" />
-    <Content Include="Views\Foo\Lesson9.cshtml" />
     <Content Include="Views\Product\Category.cshtml" />
     <Content Include="Views\Product\ProductSearch.cshtml" />
     <Content Include="Views\Product\Discount.cshtml" />
     <Content Include="Views\Product\CustomerInfo.cshtml" />
     <Content Include="Views\Product\Checkout.cshtml" />
-    <Content Include="Views\Home\product.cshtml">
-      <BrowseToURL>~/Home/product</BrowseToURL>
-    </Content>
-    <Content Include="Views\Home\Categories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
